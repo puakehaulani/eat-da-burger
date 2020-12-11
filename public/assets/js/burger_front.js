@@ -24,7 +24,7 @@ $(function () {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
-        var newDevour = {
+        var newBurger = {
             name: $("#burger_name").val().trim(),
         };
 
