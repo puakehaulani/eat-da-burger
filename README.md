@@ -21,9 +21,21 @@
 
 ## About the Project
 
+Eat da Burger is a restaurant app. Click Eat me to eat da burger, or click Order again to get one ready to devour! Enter in your own burgers to add to the menu. Sides coming soon!
+
+This is basic full stack app built with a MySQL database, Express, Handlebars and a homemade ORM. The ORM can be extended to other menu items in the future.
+
 ## Usage
 
+Enter your password into the password field (line 7) in config/connection.js
+
 Run the following command in your terminal
+
+    npm run watch
+
+Then navigate to the following address in your browser
+
+    localhost:3000
 
 ## Getting Started
 
@@ -34,6 +46,13 @@ To get started, follow these steps:
 Run the following command in your terminal
 
     npm i
+
+Initilize database through mysql with the following command in your terminal
+
+    mysql -u root -p
+    source db/schema.sql
+    source db/seeds.sql
+    exit
 
 ## Testing
 
