@@ -1,6 +1,6 @@
 # Eat Da Burger
 
-<!-- [![Demo](https://img.youtube.com/vi/Y3fuixizR1I/0.jpg)](http://www.youtube.com/watch?v=Y3fuixizR1I) -->
+[![Demo](https://img.youtube.com/vi/g_Ot8Dm9N70/0.jpg)](http://www.youtube.com/watch?v=g_Ot8Dm9N70)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
