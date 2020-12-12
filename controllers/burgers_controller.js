@@ -7,18 +7,19 @@ router.get("/", function (req, res) {
         var hbsObject = {
             burger: data
         };
-        console.log(hbsObject);
+        console.log("data", hbsObject);
         res.render("index", hbsObject);
     });
 });
 
-router.post("/api/burger", function (req, res) {
-    burger.insertOne(["burger_name"], [req.body.burger_name], function (result) {
+router.post("/api/burgers", function (req, res) {
+    burger.insertOne(["burger_name"], [req.body.name], function (result) {
         res.json({ id: result.insertId });
     });
 });
 
-router.put("/api/burger/:id", function (req, res) {
+router.put("/api/burgers/:id", function (req, res) {
+    console.log("adding put request");
     var condition = "id = " + req.params.id;
     burger.updateOne(
         {
@@ -27,9 +28,9 @@ router.put("/api/burger/:id", function (req, res) {
         condition,
         function (result) {
             if (result.changedRows === 0) {
-                return res.status(404).end();
+                return res.status(404);
             }
-            res.status(200).end();
+            return res.status(200).send({ result });
 
         }
     );
